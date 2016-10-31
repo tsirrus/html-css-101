@@ -1,0 +1,222 @@
+/*
+Notice the container div is wrapping all our sections. This allows us to have section
+backgrounds that extend to the full width, but restrict the width of our site to 1000px.
+It's a super common pattern, and you should follow it!
+*/
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+
+
+header {
+  padding: 15vh 0; /* Padding top and bottom will be in % of the viewport height */
+  border-top: 5px solid #00cc66;
+  background-image: url(http://placekitten.com/g/600/400);
+  background-size: cover; /* full-screen backgrounds! */
+}
+
+header h1 {
+  font-family: "Sacramento", cursive; /* This font comes from Google Fonts, added with a <link> tag in the HTML */
+  font-size: 4em;
+}
+
+header .phone-icons {
+  display: flex; /* display each icon next to the other */
+  list-style: none; /* remove bullets next to list items */
+  padding-left: 0; /* UL elements get a default padding from the browser, this resets it */
+}
+
+header .phone-icons li {
+  margin: 0 0.2em; /* space each phone icon from each other */
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(0,0,0, 0.6); /* semi-transparent black background */
+}
+
+/* These styles will be applied only when the LI item is hovered */
+header .phone-icons li:hover {
+  background-color: #00cc66;
+}
+
+
+
+
+
+.selling-points {
+  padding: 2em 0; /* padding on top and bottom of selling points section */
+}
+
+/* Three selling points next to each other with flexbox, no bullets on the lists */
+.selling-points-list {
+  display: flex;
+  list-style: none;
+  text-align: center; /* Since everything is centered, this will help :) */
+}
+
+.selling-points-list li i.fa {
+  color: white;
+  width: 64px;
+  height: 64px;
+  /* The next 3 properties will center content in this circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Now that this icon is flexbox, it won't center like text. This centers it like a box */
+  border-radius: 50%;
+  font-size: 2em;
+  background-color: #00cc66; /* Notice this is the 3rd time we repeat this color! There has to be a better way... */
+}
+
+.selling-points-list p {
+  color: #888;
+}
+
+
+
+
+
+.about {
+  background-color: #eee;
+  padding: 2em 0;
+}
+
+.about .flex-container {
+  display: flex;
+}
+
+.about .get-notified, .about .vimeo-video {
+  width: 50%;
+}
+
+.about .get-notified {
+  padding-right: 2em; /* adds some space to the right of the "Get Notified" subsection*/
+}
+
+/* Form styling! */
+.about .email-form {
+  display: flex;
+}
+.about .email-form input, .about .email-form button {
+  padding: 0.6em 1.2em;
+  border: 1px solid rgba(0,0,0, 0.3);
+}
+.about .email-form input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: none;
+}
+.about .email-form button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: none;
+  background-color: #00cc66;
+  color: white;
+}
+
+/*
+Following the tutorial at https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+for responsive video!
+*/
+.about .vimeo-video .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.about .vimeo-video .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+.testimonials {
+  padding: 2em 0;
+}
+
+/* Testimonial should be at most 800px wide, and centered about the page */
+.testimonial {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.testimonial-quote {
+  color: #888;
+}
+.testimonial-author {
+  font-weight: bold;
+}
+
+.testimonial-pics {
+  padding-left: 0; /* Reset a style that gets added by the browser to all ULs */
+  display: flex;
+  flex-wrap: wrap; /* If flexbox can't put elements next to each other, wrap them instead. */
+  list-style: none;
+  justify-content: center;
+}
+
+
+
+
+
+.get-in-touch {
+  padding: 2em 0; /* Notice how often we repeat this style. Maybe there's a better way... */
+  text-align: center;
+}
+
+.get-in-touch .social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.get-in-touch .social-icons li {
+  color: white;
+  width: 32px;
+  height: 32px;
+  margin: 0 0.2em;
+  /* The next 3 properties will center content in this circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #999;
+}
+
+.get-in-touch .social-icons li:hover {
+  background-color: #00cc66;
+}
+
+footer {
+  background-color: #eee;
+  padding: 2em 0;
+}
+
+footer nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer nav ul li {
+  margin: 0 0.3em;
+}
+
+footer nav ul li a {
+  color: #888;
+  font-weight: 600;
+  text-decoration: none; /* Remove the underline from each icon */
+}
