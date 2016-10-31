@@ -363,7 +363,7 @@ This is the second time we select the `social-icons` class. That's perfectly fin
 
 ```
 
-Let's add some spacing between the image and the description, as well as below the whole image + description block. To do this, add a `padding-right` of `0.5em` to the `.image` div, and a `margin-bottom` of `0.5em` to the `.main-content` div. Starting to look pretty good:
+Let's add some spacing between the image and the description, as well as below the whole image + description block. To do this, add a `padding-right` of `0.5em` to the `.image` div, and a `margin-bottom` of `0.5em` to the `.main-section` div. Starting to look pretty good:
 
 ![after some spacing](https://s11.postimg.org/ocirylzvn/Screen_Shot_2016_10_31_at_08_19_34.png)
 
@@ -402,13 +402,13 @@ Then, to display the social icons, replace the "FB", "TW" and "YT" text with the
 
 ```html
     <div class="social-icon">
-        <i class="fa fa-facebook">
+        <i class="fa fa-facebook"></i>
     </div>
     <div class="social-icon">
-        <i class="fa fa-twitter">
+        <i class="fa fa-twitter"></i>
     </div>
     <div class="social-icon">
-        <i class="fa fa-youtube">
+        <i class="fa fa-youtube"></i>
     </div>
 ```
 
