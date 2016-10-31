@@ -581,7 +581,7 @@ Our final HTML looks like this:
   </p>
 </section>
 <footer class="footer">
-  <p class="copyright">&copy; 2016 Flying Kittenz! Inc.</div>
+  <p class="copyright">&copy; 2016 Flying Kittenz! Inc.</p>
   <ul class="social-icons">
     <li class="social-icon">
       <i class="fa fa-facebook"></i>
@@ -592,7 +592,7 @@ Our final HTML looks like this:
     <li class="social-icon">
       <i class="fa fa-youtube"></i>
     </li>
-  </div>
+  </ul>
 </footer>
 </body>
 </html>
