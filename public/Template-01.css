@@ -1,3 +1,58 @@
 header {
     border-top: 1px solid #cccccc;
 }
+
+.main {
+    padding: 0 5%;
+}
+
+.main-head {
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-head-left {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.main-head-right {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.MY {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: #ff3333;
+    color: white;
+    border-radius: 50%;
+}
+
+
+.socials {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.social {
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
