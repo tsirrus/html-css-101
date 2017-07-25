@@ -72,7 +72,6 @@ body {
   justify-content: center;
   align-items: center;
   list-style: none;
-  width: 70%;
 }
 
 .feature {
@@ -80,7 +79,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  margin: 2% 5%;
+  margin: 2% 0;
 }
 
 .feature div {
@@ -136,6 +135,7 @@ body {
   width: 200px;
   padding: 0;
   margin: 0;
+  border-radius: 9px 0 0 9px;
 }
 
 .notify-button {
@@ -149,6 +149,7 @@ body {
   padding: 0px;
   text-decoration: none;
   margin: 0;
+  border-radius: 0 9px 9px 0;
 }
 
 .notify-video {
@@ -168,13 +169,20 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
   width: 100%;
 }
 
 .network p {
   padding: 0 20%;
+}
+
+.network-people {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
 }
 
 .network-links {
